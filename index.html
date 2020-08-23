@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="($title || 'Home')">Sistem Akademik STIMIK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/plugins/sweetalert2/sweetalert2.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed" ng-app="app">
+  <div class="wrapper">
+    <div ng-include src="'app/views/template/header.html'"></div>
+    <ui-view></ui-view>
+    <div ng-include src="'app/views/template/footer.html'"></div>
+  </div>
+  
+</body>
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="app/assets/angular/angular.min.js"></script>
+<script src="app/assets/angular/angular-route.min.js"></script>
+<script src="app/assets/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="app/assets/bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
+<script src="app/assets/bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+<script src="app/js/routers/app.router.js"></script>
+<script src="app/js/routers/account.router.js"></script>
+<script src="app/js/routers/admin.router.js"></script>
+<script src="app/js/routers/user.router.js"></script>
+
+<script src="app/js/controllers/app.controller.js"></script>
+<script src="app/js/controllers/account.controllers.js"></script>
+<script src="app/js/controllers/admin.controllers.js"></script>
+<script src="app/js/controllers/user.controllers.js"></script>
+
+<script src="app/js/services/app.services.js"></script>
+<script src="app/js/services/auth.services.js"></script>
+<script src="app/js/services/admin.services.js"></script>
+<script src="app/js/services/helper.services.js"></script>
+<script src="app/js/services/message.services.js"></script>
+<script src="app/js/services/storage.services.js"></script>
+<script src="app/js/services/user.services.js"></script>
+
+<script src="app/js/components/component.js"></script>
+<script src="app/js/components/login.component.js"></script>
+<script src="app/js/components/fileinput.component.js"></script>
+<script src="app/js/components/layouts/layout.component.js"></script>
+<script src="app/js/components/htmleditor/htmleditor.component.js"></script>
+<script src="app/js/app.js"></script>
+<script src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+<script src="assets/plugins/swangular/swangular.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/dist/js/adminlte.js"></script>
+
+<script src="assets/dist/js/demo.js"></script>
+
+</html>

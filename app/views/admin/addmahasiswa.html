@@ -1,0 +1,247 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-default">
+            <div class="card-header clearfix">
+                <h3 class="card-title">Tambah Mahasiswa</h3>
+                <bottom class="btn btn-secondary btn-sm float-right" style="margin-bottom:12px;" ng-click="back()">
+                    <i class="fas fa-arrow-left"></i>Kembali
+                </bottom>
+            </div>
+            <div class="card-body">
+                <form ng-submit="simpan()" class="row">
+                    <div class="col-md-6">
+                        <label for="npm" class="control-label">NPM</label>
+                        <div class="form-group">
+                            <input type="text" name="npm" 
+                                class="form-control" id="npm" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kdps" class="control-label">Kdps</label>
+                        <div class="form-group">
+                            <input type="text" name="kdps"
+                                class="form-control" id="kdps" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jenjang" class="control-label">Jenjang</label>
+                        <div class="form-group">
+                            <input type="text" name="jenjang"
+                                class="form-control" id="jenjang" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kelas" class="control-label">Kelas</label>
+                        <div class="form-group">
+                            <input type="text" name="kelas"
+                                class="form-control" id="kelas" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nmmhs" class="control-label">Nmmhs</label>
+                        <div class="form-group">
+                            <input type="text" name="nmmhs" 
+                                class="form-control" id="nmmhs" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tmlhr" class="control-label">Tmlhr</label>
+                        <div class="form-group">
+                            <input type="text" name="tmlhr"
+                                class="form-control" id="tmlhr" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tglhr" class="control-label">Tglhr</label>
+                        <div class="form-group">
+                            <input type="text" name="tglhr"
+                                class="has-datepicker form-control" id="tglhr" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jk" class="control-label">Jk</label>
+                        <div class="form-group">
+                            <input type="text" name="jk"
+                                class="form-control" id="jk" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="agama" class="control-label">Agama</label>
+                        <div class="form-group">
+                            <input type="text" name="agama"
+                                class="form-control" id="agama" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kewarga" class="control-label">Kewarga</label>
+                        <div class="form-group">
+                            <input type="text" name="kewarga"
+                                class="form-control" id="kewarga" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pendidikan" class="control-label">Pendidikan</label>
+                        <div class="form-group">
+                            <input type="text" name="pendidikan"
+                                class="form-control" id="pendidikan" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nmsmu" class="control-label">Nmsmu</label>
+                        <div class="form-group">
+                            <input type="text" name="nmsmu"
+                                class="form-control" id="nmsmu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jursmu" class="control-label">Jursmu</label>
+                        <div class="form-group">
+                            <input type="text" name="jursmu"
+                                class="form-control" id="jursmu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kotasmu" class="control-label">Kotasmu</label>
+                        <div class="form-group">
+                            <input type="text" name="kotasmu"
+                                class="form-control" id="kotasmu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kabsmu" class="control-label">Kabsmu</label>
+                        <div class="form-group">
+                            <input type="text" name="kabsmu"
+                                class="form-control" id="kabsmu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="provsmu" class="control-label">Provsmu</label>
+                        <div class="form-group">
+                            <input type="text" name="provsmu"
+                                class="form-control" id="provsmu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="pekerjaan" class="control-label">Pekerjaan</label>
+                        <div class="form-group">
+                            <input type="text" name="pekerjaan"
+                                class="form-control" id="pekerjaan" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="almt" class="control-label">Almt</label>
+                        <div class="form-group">
+                            <input type="text" name="almt"
+                                class="form-control" id="almt" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="notlp" class="control-label">Notlp</label>
+                        <div class="form-group">
+                            <input type="text" name="notlp"
+                                class="form-control" id="notlp" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="status" class="control-label">Status</label>
+                        <div class="form-group">
+                            <input type="text" name="status"
+                                class="form-control" id="status" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="jmsaudara" class="control-label">Jmsaudara</label>
+                        <div class="form-group">
+                            <input type="text" name="jmsaudara"
+                                class="form-control" id="jmsaudara" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nmayah" class="control-label">Nmayah</label>
+                        <div class="form-group">
+                            <input type="text" name="nmayah"
+                                class="form-control" id="nmayah" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="almtayah" class="control-label">Almtayah</label>
+                        <div class="form-group">
+                            <input type="text" name="almtayah" 
+                                class="form-control" id="almtayah" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="nmibu" class="control-label">Nmibu</label>
+                        <div class="form-group">
+                            <input type="text" name="nmibu"
+                                class="form-control" id="nmibu" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="sumbiaya" class="control-label">Sumbiaya</label>
+                        <div class="form-group">
+                            <input type="text" name="sumbiaya"
+                                class="form-control" id="sumbiaya" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="statuskul" class="control-label">Statuskul</label>
+                        <div class="form-group">
+                            <input type="text" name="statuskul"
+                                class="form-control" id="statuskul" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tgdaftar" class="control-label">Tgdaftar</label>
+                        <div class="form-group">
+                            <input type="text" name="tgdaftar"
+                                class="has-datepicker form-control" id="tgdaftar" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="kurikulum" class="control-label">Kurikulum</label>
+                        <div class="form-group">
+                            <input type="text" name="kurikulum"
+                                class="form-control" id="kurikulum" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="IdUser" class="control-label">IdUser</label>
+                        <div class="form-group">
+                            <input type="text" name="IdUser"
+                                class="form-control" id="IdUser" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="photo" class="control-label">Photo</label>
+                        <div class="form-group">
+                            <input type="text" name="photo"
+                                class="form-control" id="photo" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="waning-validasi">
+        <div class="modal-dialog">
+            <div class="modal-content bg-primary">
+                <div class="list-group">
+                    <div class="list-group-item bg-blue" style="font-size:24px; color: red;">
+                        Peringatan !!!
+                    </div>
+                    <div class="list-group-item text-center">
+                        <p style="color:black;  font-size:18px">Data yang telah di validasi tidak dapat dilakukan
+                            perubahan</p>
+                        <p style="color:black; font-size:20px">Yakin akan melakukan validasi?</p>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <button type="button" class="btn btn-outline-light" ng-click="validasi()">Validasi</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">List Mahasiswa</h3>
+            </div>
+            <div class="card-body">
+                <a ui-sref="admin-addmahasiswa({ id: model.idmahasiswa })" ui-sref-opts="{reload: true}" class="btn btn-success" ng-click="ubah(item)"
+                    style="margin-bottom:12px;" title="Tambah data mahasiswa" data-toggle="tooltip"
+                    data-placement="right" tooltip>
+                    <i class="fas fa-plus-circle"></i>Tambah
+                </a>
+                <div style="width:100wh; overflow-x: auto;">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>NPM</th>
+                                <th>Nama</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Agama</th>
+                                <th>Kontak</th>
+                                <th>Alamat</th>
+                                <th>Tanggal Daftar</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><?php echo $m['Id']; ?></td>
+                                <td><?php echo $m['npm']; ?></td>
+                                <td><?php echo $m['nmmhs']; ?></td>
+                                <td><?php echo $m['jk']; ?></td>
+                                <td><?php echo $m['agama']; ?></td>
+                                <td><?php echo $m['notlp']; ?></td>
+                                <td><?php echo $m['almt']; ?></td>
+                                <td><?php echo $m['tgdaftar']; ?></td>
+                                <td>
+                                    <div class="noborder-radius text-center">
+                                        <a ng-show="item.status == 'Draf'" class="btn btn-primary"
+                                            ng-click="showvalidasi(item)" title="Validasi" data-toggle="tooltip"
+                                            data-placement="left" tooltip><i class="fas fa-check"></i></a>
+                                        <a ng-show="item.status == 'Draf'"
+                                            href="<?= base_url();?>user/renja/created/{{item.idRencanaKerja}}"
+                                            class="btn btn-warning" ng-click="ubah(item)" title="Ubah" data-toggle="tooltip"
+                                            data-placement="left" tooltip><i class="fas fa-edit"></i></a>
+                                        <bottom ng-show="item.status != 'Draf'" class="btn btn-warning disabled"
+                                            title="Ubah" data-toggle="tooltip" data-placement="left" tooltip><i
+                                                class="fas fa-edit"></i></bottom>
+                                        <bottom ng-show="item.status == 'Draf'" class="btn btn-danger"
+                                            ng-click="delete(item)" title="Hapus Pengajuan" data-toggle="tooltip"
+                                            data-placement="left" tooltip><i class="fas fa-trash-alt"></i></bottom>
+                                        <bottom ng-show="item.status != 'Draf'" class="btn btn-danger disabled"
+                                            title="Hapus Pengajuan" data-toggle="tooltip" data-placement="left" tooltip><i
+                                                class="fas fa-trash-alt"></i></bottom>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
